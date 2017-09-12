@@ -33,11 +33,11 @@ const ListItemLink = ({ to, ...rest }) => (
 
 export const mailFolderListItems = (
     <div>
-        <ListItemLink to="/" label="Home" />
+        <ListItemLink to="/" label="Principal" />
         <ListItemLink to="/ecomms" label="Oficinas" />
         <ListItemLink to="/contactenos" label="Consultas" />
         <ListItemLink to="/users" label="contactenos" />
-        <ListItemLink to="/abouts" label=".." />
+        <ListItemLink to="/abouts" label="Clientes" />
 
 
 
@@ -50,19 +50,19 @@ export const otherMailFolderListItems = (
             <ListItemIcon>
                 <MailIcon />
             </ListItemIcon>
-            <ListItemText primary="All mail" />
+            <ListItemText primary="Mensajes" />
         </ListItem>
         <ListItem button>
             <ListItemIcon>
                 <DeleteIcon />
             </ListItemIcon>
-            <ListItemText primary="Trash" />
+            <ListItemText primary="Eliminar" />
         </ListItem>
         <ListItem button>
             <ListItemIcon>
                 <ReportIcon />
             </ListItemIcon>
-            <ListItemText primary="Spam" />
+            <ListItemText primary="Salir" />
         </ListItem>
     </div>
 );

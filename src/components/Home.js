@@ -1,51 +1,142 @@
-/* eslint-disable flowtype/require-valid-file-annotation */
+// @flow weak
 
 import React from 'react';
-//import PropTypes from 'prop-types';
-import Card, { CardHeader, CardContent, CardActions } from 'material-ui/Card';
-
-import Avatar from 'material-ui/Avatar';
-import IconButton from 'material-ui/IconButton';
+import PropTypes from 'prop-types';
+import { withStyles } from 'material-ui/styles';
+import ButtonBase from 'material-ui/ButtonBase';
 import Typography from 'material-ui/Typography';
-import FavoriteIcon from 'material-ui-icons/Favorite';
-import ShareIcon from 'material-ui-icons/Share';
 
+const styles = theme => ({
+  root: {
+    marginTop: theme.spacing.unit * 4,
+    display: 'flex',
+    flexWrap: 'wrap',
+    minWidth: 300,
+    width: '100%',
+  },
+  image: {
+    position: 'relative',
+    height: 200,
+    [theme.breakpoints.down('sm')]: {
+      width: '100% !important', // Overrides inline-style
+      height: 100,
+    },
+    '&:hover': {
+      zIndex: 1,
+    },
+    '&:hover $imageBackdrop': {
+      opacity: 0.15,
+    },
+    '&:hover $imageMarked': {
+      opacity: 0,
+    },
+    '&:hover $imageTitle': {
+      border: '4px solid currentColor',
+    },
+  },
+  imageButton: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: theme.palette.common.white,
+  },
+  imageSrc: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center 40%',
+  },
+  imageBackdrop: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    background: theme.palette.common.black,
+    opacity: 0.4,
+    transition: theme.transitions.create('opacity'),
+  },
+  imageTitle: {
+    position: 'relative',
+    padding: `${theme.spacing.unit * 2}px ${theme.spacing.unit * 4}px ${theme.spacing.unit + 6}px`,
+  },
+  imageMarked: {
+    height: 3,
+    width: 18,
+    background: theme.palette.common.white,
+    position: 'absolute',
+    bottom: -2,
+    left: 'calc(50% - 9px)',
+    transition: theme.transitions.create('opacity'),
+  },
+});
 
-class Home extends React.Component {
-    render() {
-        return (
-            <div>
-                <Card>
-                    <CardHeader
-                        avatar={
-                            <Avatar aria-label="Recipe" >
-                                R
-                            </Avatar>
-                        }
-                        title="Shrimp and Chorizo Paella"
-                        subheader="September 14, 2016"
-                    />
+const images = [
+  {
+    url: 'http://www.arqhys.com/fotos/wp-content/uploads/2011/02/Fotos-de-oficinas-de-abogados.jpg',
+    title: 'OFICINAS',
+    width: '40%',
+  },
+  {
+    url: 'https://fotosdedecoracion.com/wp-content/uploads/2011/11/diseo-de-oficinas-de-abogados2.jpg',
+    title: 'CONTACTENOS',
+    width: '30%',
+  },
+  {
+    url: 'https://www.google.com.pe/maps/vt/data=bh-79PcJB-iWIUE5fieKNvLqIXrgoRdJmS8yRX3Ij4JOMJCLwWgDKRI7ZPT0y-tcITsozOaFR0wIhbwLjgJ6TEUNScUKP1rDyxU16R37JKeO9751JZiTkmWJa9hi0PhHoYjOySIJimki9R9JLZorP2gz6Q8ajsZGA73LVcvUjWIEWkrlyI4Lu94RsiaI1G1UPUyX8Zv23tQMFPJu-ipHCA',
+    title: 'RESERVACIONES',
+    width: '30%',
+  },
+];
 
-                    <CardContent>
-                        <Typography component="p">
-                            This impressive paella is a perfect party dish and a fun meal to cook together with
-                            your guests. Add 1 cup of frozen peas along with the mussels, if you like.
-                        </Typography>
-                    </CardContent>
-                    <CardActions disableActionSpacing>
-                        <IconButton aria-label="Add to favorites">
-                            <FavoriteIcon />
-                        </IconButton>
-                        <IconButton aria-label="Share">
-                            <ShareIcon />
-                        </IconButton>
+function ButtonBases(props) {
+  const { classes } = props;
 
-                    </CardActions>
-
-                </Card>
-            </div>
-        );
-    }
+  return (
+    <div className={classes.root}>
+      {images.map(image => (
+        <ButtonBase
+          focusRipple
+          key={image.title}
+          className={classes.image}
+          style={{
+            width: image.width,
+          }}
+        >
+          <div
+            className={classes.imageSrc}
+            style={{
+              backgroundImage: `url(${image.url})`,
+            }}
+          />
+          <div className={classes.imageBackdrop} />
+          <div className={classes.imageButton}>
+            <Typography
+              component="h3"
+              type="subheading"
+              color="inherit"
+              className={classes.imageTitle}
+            >
+              {image.title}
+              <div className={classes.imageMarked} />
+            </Typography>
+          </div>
+        </ButtonBase>
+      ))}
+    </div>
+  );
 }
 
-export default (Home);
+ButtonBases.propTypes = {
+  classes: PropTypes.object.isRequired,
+};
+
+export default withStyles(styles)(ButtonBases);

@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import ContactenosAgregar from './Contactenos/ContactenosAgregar';
 import ContactenosList from './Contactenos/ContactenosList';
 import Grid from 'material-ui/Grid';
-
-
+import Button from 'material-ui/Button';
 import PropTypes from 'prop-types';
+
+
+
+
 import { withStyles } from 'material-ui/styles';
 import TextField from 'material-ui/TextField';
 
@@ -21,46 +24,70 @@ const styles = theme => ({
 });
 
 
-class Contactenos extends Component {
+class Contactenos extends Component  {
+  
   render() {
+    
     return (
+      
       <div>
          <TextField
          id="placeholder"
-         label="NOmbre"
-         InputProps={{ placeholder: 'Placeholder' }}
-         helperText="Full width!"
+         label="Nombre"
+         InputProps={{ placeholder: 'Nombre' }}
+         helperText=""
          fullWidth
          margin="normal"
        />
        <TextField
          id="placeholder"
-         label="Label"
-         InputProps={{ placeholder: 'Placeholder' }}
-         helperText="Full width!"
+         label="Apellidos"
+         InputProps={{ placeholder: 'Apellidos' }}
+         helperText=""
          fullWidth
          margin="normal"
        />
        <TextField
          id="placeholder"
-         label="Label"
+         label="DNI"
          InputProps={{ placeholder: 'Placeholder' }}
-         helperText="Full width!"
+         helperText=""
          fullWidth
          margin="normal"
        />
        <TextField
          id="placeholder"
-         label="Label"
-         InputProps={{ placeholder: 'Placeholder' }}
-         helperText="Full width!"
+         label="Celular"
+         InputProps={{ placeholder: 'Celular' }}
+         helperText=""
+         fullWidth
+         margin="10px"
+       />
+       <TextField
+         id="placeholder"
+         label="Email"
+         InputProps={{ placeholder: 'Email' }}
+         helperText=""
          fullWidth
          margin="normal"
        />
+       <TextField
+         id="placeholder"
+         label="Consulta"
+         InputProps={{ placeholder: 'Consulta' }}
+         helperText=""
+         fullWidth
+         margin="normal"
+       />
+       <div><Button raised color="accent" disabled >
+       Enviar Consulta
+     </Button></div>
 
       </div>
+       
     );
   }
 }
 
-export default Contactenos;
+
+export default Contactenos ;

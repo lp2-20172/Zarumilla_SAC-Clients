@@ -65,7 +65,7 @@ const styles = theme => ({
     },
     drawerPaper: {
         position: 'relative',
-        height: '1000px',
+        height: '738px',
         width: drawerWidth,
     },
     drawerHeader: {

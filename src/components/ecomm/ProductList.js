@@ -6,7 +6,7 @@ import { withStyles } from 'material-ui/styles';
 import { GridList, GridListTile, GridListTileBar } from 'material-ui/GridList';
 import Subheader from 'material-ui/List/ListSubheader';
 import IconButton from 'material-ui/IconButton';
-import AddShoppingCartIcon from 'material-ui-icons/AddShoppingCart';
+import AssignmentTurnedIn from 'material-ui-icons/AssignmentTurnedIn';
 
 
 import { connect } from 'react-redux'
@@ -55,8 +55,9 @@ class ProductList extends Component {
                                 subtitle={<span>Desde $: {d.price}</span>}
                                 actionIcon={
                                     <IconButton onClick={() => addToCart(d)}>
-                                        <AddShoppingCartIcon color="rgba(255, 255, 255, 0.54)" />
+                                        <AssignmentTurnedIn color="rgba(255, 255, 255, 0.54)" />
                                     </IconButton>
+                                    
                                 }
 
                                 

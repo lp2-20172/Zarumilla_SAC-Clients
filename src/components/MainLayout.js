@@ -65,7 +65,7 @@ const styles = theme => ({
     },
     drawerPaper: {
         position: 'relative',
-        height: 'auto',
+        height: '1000px',
         width: drawerWidth,
     },
     drawerHeader: {
@@ -136,7 +136,7 @@ class PersistentDrawer extends React.Component {
                                 <MenuIcon />
                             </IconButton>
                             <Typography type="title" color="inherit" noWrap>
-                                Persistent drawer
+                                Menu
               </Typography>
                         </Toolbar>
                     </AppBar>

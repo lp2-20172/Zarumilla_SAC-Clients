@@ -14,6 +14,10 @@ import IconButton from 'material-ui/IconButton';
 import Typography from 'material-ui/Typography';
 import DeleteIcon from 'material-ui-icons/Delete';
 
+
+
+
+
 class ShoppingCart extends Component {
 
     render() {
@@ -25,16 +29,35 @@ class ShoppingCart extends Component {
             <CardContent >
 
                 <Typography type="headline">
-                    ShoppingCart List
+                 Detalles Oficinas
                 </Typography>
 
                 <Typography type="subheading" color="secondary" >
-                Total: ${cart.reduce((sum, product) => sum + product.price, 0)}
+                precio por Oficina: ${cart.reduce((sum, product) => sum + product.price, 0)}
             </Typography>
                 <div >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
                     <List >
                     {cart.map((d, index) =>
-                  <ListItem button  key={index}>
+                    <ListItem button  key={index}>
                     <ListItemAvatar>
                       <Avatar>
                       <img src={d.image} alt={d.name} />

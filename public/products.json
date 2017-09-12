@@ -1,7 +1,7 @@
 {
   "products": [
-    { "id": 1, "name": "Hipster Ultimate", "price": 299, "image": "https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-1.jpg" },
-    { "id": 2, "name": "On Motion Live", "price": 99, "image": "https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-2.jpg" },
-    { "id": 3, "name": "Underground Max", "price": 149, "image": "https://s3.amazonaws.com/makeitreal/projects/e-commerce/camiseta-3.jpg" }
+    { "id": 1, "name": "Oficina Abierta", "price": 299, "image": "https://decoraciondeoficina.com/wp-content/uploads/2012/10/oficinas-modernas.jpg" },
+    { "id": 2, "name": "Oficina compartida", "price": 99, "image": "https://i.pinimg.com/736x/6d/4c/a2/6d4ca2c810031dbfed2fe6964fdb7c06--office-spaces-ideas-para.jpg" },
+    { "id": 3, "name": "Sala de reuniones", "price": 149, "image": "http://www.arquimaster.com.ar/web/wp-content/uploads/2015/10/oficinas_gravita5.jpg" }
   ]
 }

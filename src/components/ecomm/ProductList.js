@@ -40,7 +40,7 @@ class ProductList extends Component {
 
             <CardContent>
                 <Typography type="headline">
-                    Product List
+                    Oficinas Disponibles
                 </Typography>
 
                 <GridList cellHeight={180} className={classes.gridList}>
@@ -52,7 +52,7 @@ class ProductList extends Component {
                             <img src={d.image} alt={d.name} />
                             <GridListTileBar
                                 title={d.name}
-                                subtitle={<span>Price $: {d.price}</span>}
+                                subtitle={<span>Desde $: {d.price}</span>}
                                 actionIcon={
                                     <IconButton onClick={() => addToCart(d)}>
                                         <AddShoppingCartIcon color="rgba(255, 255, 255, 0.54)" />

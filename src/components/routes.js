@@ -2,7 +2,7 @@ import React from 'react'
 import About from './About';
 import Home from './Home';
 import Counter from './Counter';
-import User from './User';
+import Ubicanos from './Ubicanos';
 import EComm from './EComm';
 import Contactenos from './Contactenos';
 const routes = [
@@ -28,9 +28,9 @@ const routes = [
         main: Counter
     },
     {
-        path: '/users',
-        sidebar: () => <div>User!</div>,
-        main: User
+        path: '/ubicanos',
+        sidebar: () => <div>Ubicanos!</div>,
+        main: Ubicanos
     },
     {
         path: '/ecomms',

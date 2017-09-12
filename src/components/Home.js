@@ -72,7 +72,7 @@ const styles = theme => ({
     height: 3,
     width: 18,
     background: theme.palette.common.white,
-    position: 'absolute',
+      position: 'absolute',
     bottom: -2,
     left: 'calc(50% - 9px)',
     transition: theme.transitions.create('opacity'),
@@ -83,32 +83,20 @@ const images = [
   {
     url: 'http://www.arqhys.com/fotos/wp-content/uploads/2011/02/Fotos-de-oficinas-de-abogados.jpg',
     title: 'OFICINAS',
-<<<<<<< HEAD
     width: '100%',
-=======
-    width: '50%',
->>>>>>> f25564c4bd77a737320f13d89180694119f6161e
   },
   {
     url: 'https://fotosdedecoracion.com/wp-content/uploads/2011/11/diseo-de-oficinas-de-abogados2.jpg',
     title: 'CONTACTENOS',
-<<<<<<< HEAD
     width: '100%',
   },
   {
     url: 'https://www.google.com.pe/maps/vt/data=bh-79PcJB-iWIUE5fieKNvLqIXrgoRdJmS8yRX3Ij4JOMJCLwWgDKRI7ZPT0y-tcITsozOaFR0wIhbwLjgJ6TEUNScUKP1rDyxU16R37JKeO9751JZiTkmWJa9hi0PhHoYjOySIJimki9R9JLZorP2gz6Q8ajsZGA73LVcvUjWIEWkrlyI4Lu94RsiaI1G1UPUyX8Zv23tQMFPJu-ipHCA',
     title: 'UBIQUENOS',
     width: '100%',
-=======
-    width: '50%',
-  },
-  {
-    url: 'https://www.google.com.pe/maps/vt/data=bh-79PcJB-iWIUE5fieKNvLqIXrgoRdJmS8yRX3Ij4JOMJCLwWgDKRI7ZPT0y-tcITsozOaFR0wIhbwLjgJ6TEUNScUKP1rDyxU16R37JKeO9751JZiTkmWJa9hi0PhHoYjOySIJimki9R9JLZorP2gz6Q8ajsZGA73LVcvUjWIEWkrlyI4Lu94RsiaI1G1UPUyX8Zv23tQMFPJu-ipHCA',
-    title: 'RESERVACIONES',
-    width: '50%',
->>>>>>> f25564c4bd77a737320f13d89180694119f6161e
   },
 ];
+
 
 function ButtonBases(props) {
   const { classes } = props;

@@ -4,7 +4,7 @@ import Home from './Home';
 import Counter from './Counter';
 import User from './User';
 import EComm from './EComm';
-
+import Contactenos from './Contactenos';
 const routes = [
     {
         path: '/',
@@ -18,9 +18,9 @@ const routes = [
         main: About
     },
     {
-        path: '/one',
-        sidebar: () => <div>one!</div>,
-        main: () => <h2>One</h2>
+        path: '/contactenos',
+        sidebar: () => <div>Contactenos!</div>,
+        main: Contactenos
     },
     {
         path: '/counters',

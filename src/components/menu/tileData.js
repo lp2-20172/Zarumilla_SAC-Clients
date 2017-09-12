@@ -34,11 +34,11 @@ const ListItemLink = ({ to, ...rest }) => (
 export const mailFolderListItems = (
     <div>
         <ListItemLink to="/" label="Home" />
-        <ListItemLink to="/abouts" label="abouts" />
-        <ListItemLink to="/one" label="one" />
-        <ListItemLink to="/counters" label="counters" />
-        <ListItemLink to="/users" label="users" />
-        <ListItemLink to="/ecomms" label="ecomms" />
+        <ListItemLink to="/abouts" label=".." />
+        
+        <ListItemLink to="/contactenos" label="Contactenos" />
+        <ListItemLink to="/users" label="Ubicanos" />
+        <ListItemLink to="/ecomms" label="Oficinas" />
 
 
 

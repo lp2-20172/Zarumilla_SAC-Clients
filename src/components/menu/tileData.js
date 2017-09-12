@@ -38,6 +38,7 @@ export const mailFolderListItems = (
         <ListItemLink to="/contactenos" label="Consultas" />
         <ListItemLink to="/ubicanos" label="contactenos" />
         <ListItemLink to="/abouts" label="Clientes" />
+        <ListItemLink to="/crudConsultas" label="CRUDCOnsultas" />
 
 
 

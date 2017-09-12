@@ -5,6 +5,7 @@ import Counter from './Counter';
 import Ubicanos from './Ubicanos';
 import EComm from './EComm';
 import Contactenos from './Contactenos';
+import CRUDCOnsultas from './CRUDCOnsultas';
 const routes = [
     {
         path: '/',
@@ -36,7 +37,13 @@ const routes = [
         path: '/ecomms',
         sidebar: () => <div>EComm!</div>,
         main: EComm
+    },
+    {
+        path: '/crudConsultas',
+        sidebar: () => <div>CRUDCOnsultas!</div>,
+        main: CRUDCOnsultas
     }
+    
     
 ]
 

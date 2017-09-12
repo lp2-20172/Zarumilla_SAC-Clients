@@ -29,11 +29,11 @@ function createData(name, calories, fat, carbs, protein) {
 
 const columnData = [
   
-  { id: 'Nombres', numeric: false, disablePadding: true, label: 'Nombres' },
-  { id: 'Telefono', numeric: true, disablePadding: false, label: 'Telefono' },
+  { id: 'Nombre', numeric: false, disablePadding: true, label: 'Nombres' },
+  { id: 'Apellido', numeric: true, disablePadding: false, label: 'Apellido' },
   { id: 'DNI', numeric: true, disablePadding: false, label: 'DNI' },
-  { id: 'Direccion', numeric: true, disablePadding: false, label: 'Direccion' },
-  { id: 'Oficina', numeric: true, disablePadding: false, label: 'Oficina' },
+  { id: 'Celular', numeric: true, disablePadding: false, label: 'Celular' },
+  { id: 'Correo Electronico', numeric: true, disablePadding: false, label: 'Correo Electronico' },
 ];
 
 class EnhancedTableHead extends React.Component {
@@ -165,10 +165,10 @@ class EnhancedTable extends React.Component {
     orderBy: 'calories',
     selected: [],
     data: [
-      createData('Ever Hilasaca', 159, 6.0, 24, 4.0),
-      createData('Crhistian Paye', 237, 9.0, 37, 4.3),
-      createData('Wilber Mamani', 262, 16.0, 24, 6.0),
-      createData('Lea Quilla', 305, 3.7, 67, 4.3),
+      createData('Ever ', 'hilasaca', 75787097, 3345435, 'ever@gmail.com'),
+      createData('Crhistian ', 'hilasaca', 75787097, 37435435, 'ever@gmail.com'),
+      createData('Wilber ', 'hilasaca', 75787097, 24345435, 'ever@gmail.com'),
+      createData('Lea ', 'hilasaca', 75787097, 67435435435, 'ever@gmail.com'),
     
     ],
   };

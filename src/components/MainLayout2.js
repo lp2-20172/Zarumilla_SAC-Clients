@@ -76,7 +76,7 @@ class TemporaryDrawer extends React.Component {
         </Drawer>
 
         HOLA
-        <Button onClick={this.handleLeftOpen}>Open Left</Button>
+        <Button onClick={this.handleLeftOpen}>Open right</Button>
 
         
       </div>

@@ -35,8 +35,8 @@ export const mailFolderListItems = (
     <div>
         <ListItemLink to="/" label="Home" />
         <ListItemLink to="/ecomms" label="Oficinas" />
-        <ListItemLink to="/contactenos" label="Contactenos" />
-        <ListItemLink to="/users" label="Ubicanos" />
+        <ListItemLink to="/contactenos" label="Consultas" />
+        <ListItemLink to="/users" label="contactenos" />
         <ListItemLink to="/abouts" label=".." />
 
 

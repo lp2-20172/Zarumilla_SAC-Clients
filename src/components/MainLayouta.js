@@ -133,8 +133,8 @@ class PersistentDrawer extends React.Component {
                         >
                             <MenuIcon />
                         </IconButton>
-                        <Typography type="title" color="inherit" noWrap>
-                            Persistent drawer
+                        <Typography type="Rentas de Oficina" color="inherit" noWrap>
+                            Rentas de Oficina
               </Typography>
                     </Toolbar>
                 </AppBar>

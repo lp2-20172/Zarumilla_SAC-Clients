@@ -10,7 +10,7 @@ class Footer extends Component {
             <CardContent>
                 
                 <Typography type="subheading" color="secondary">
-                Footer
+                Rentas de Oficina
                 </Typography>
             </CardContent>
         );
